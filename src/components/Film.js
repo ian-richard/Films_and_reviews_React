@@ -4,8 +4,10 @@ const Film = ({name, children}) => {
 
     return(
         <>
-        <h4>{children}</h4>
-        <p>{name}</p>
+        <p>
+            <a href={children}>{name}</a>
+        </p>
+        
         </>
     );
 }

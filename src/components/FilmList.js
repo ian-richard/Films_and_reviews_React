@@ -6,13 +6,15 @@ const FilmList = ({films}) => {
 
     const filmArray = films.map(film => {
         return(
-            <Film name={Film.name} key={Film.id}>{Film.url}</Film>
+            <ul>
+            <li><Film name={film.name} key={film.id}>{film.url}</Film></li>
+            </ul>
         )
     })
     
   return (
     <>
-      <h1>I am a FilmList</h1>
+      <hr></hr>
   {filmArray}
   </>
   );
