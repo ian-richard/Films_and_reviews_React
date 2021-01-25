@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import FilmList from '../components/FilmList';
+import ViewMore from '../components/ViewMore';
 
 const FilmBox = () => {
 
@@ -36,6 +37,7 @@ const FilmBox = () => {
         <>
         <h1>Upcoming film releases for the UK</h1>
         <FilmList films={films}></FilmList>
+        <ViewMore></ViewMore>
         </>
     )
 }
